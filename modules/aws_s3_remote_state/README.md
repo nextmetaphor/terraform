@@ -1,7 +1,6 @@
 ```bash
-# export AWS credentials
-export AWS_ACCESS_KEY_ID=""
-export AWS_SECRET_ACCESS_KEY=""
+# connect to aws
+aws configure
 export AWS_DEFAULT_REGION="us-east-1"
 
 # download providers and validate files
