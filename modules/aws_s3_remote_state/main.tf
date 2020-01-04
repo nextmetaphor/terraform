@@ -1,6 +1,9 @@
 resource "aws_s3_bucket" "remote_state" {
   bucket        = var.bucket_name
   force_destroy = true
+  versioning {
+    enabled = true
+  }
 }
 
 resource "aws_s3_bucket_public_access_block" "remote_state" {
